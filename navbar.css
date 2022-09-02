@@ -1,0 +1,47 @@
+html, body {
+    background-color: aliceblue;
+    margin: 10px;
+}
+
+.container {
+    background-color: yellow;
+    border: 10px solid blue;
+    display: flex;
+}
+
+.portfolio {
+    flex: 1;
+}
+
+.container li {
+    list-style-type: none;
+}
+
+.container li a {
+    display: inline-block;
+    padding: 15px;
+    color: grey;
+    font-size: 200%;
+    text-decoration: none;
+}
+@media(max-width:600px) {
+    .container {
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    .container li {
+        flex-basis: 50%;
+        /* width: 50%; */
+        text-align: center;
+    }
+}
+
+@media(max-width:400px) {
+    /* .container li {
+        flex: 1 1 100%;
+    } */
+    .container {
+        flex-direction: column;
+    }
+}

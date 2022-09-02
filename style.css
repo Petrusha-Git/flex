@@ -1,0 +1,69 @@
+html, body {
+    background-color: grey;
+    margin: 10px;
+}
+
+.container {
+    background-color: lime;
+    padding: 15px;
+}
+
+.container > div {
+    padding: 15px;
+    text-align: center;
+    font-size: 200%;
+    color: black;
+}
+
+.container > div:nth-child(1) {
+background-color: yellow;
+}
+
+.container > div:nth-child(2) {
+   background-color: white; 
+}
+
+.container > div:nth-child(3) {
+    background-color: lightblue;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 600px;
+    flex-wrap: wrap;
+}
+
+
+.one {
+    /* flex: 1;
+
+    flex: 1 1 0;
+
+    flex-grow: 1;
+    flex-shrink: 1; */
+    flex-grow: 1;
+    flex-basis: 200px;
+    flex-shrink: 1;
+    order: -1;
+    /* width: 200px; */
+    /* align-self: flex-start; */
+}
+
+.two {
+    flex: 1 3 200px;
+    order: 1;
+}
+
+.three {
+    /* flex-basis: 200px; */
+    flex-grow: 1;
+    flex-basis: 200px;
+    flex-shrink: 2;
+    order: 0;
+    /* width: 200px; */
+    /* flex: 1; */
+    /* align-self: flex-end; */
+}
